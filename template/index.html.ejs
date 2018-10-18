@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title><%= title %></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<style>
+			<%- include('main.css') %>
+			<%- include('csl.css.ejs') %>
+		</style>
+	</head>
+	<body>
+		<article class="markdown-body">
+			<header>
+				<h1><%- title %></h1>
+				<%- subtitle ? `<h2>${subtitle}</h2>` : `` %>
+				<section>
+					<%- authors.map(author => {
+						let buf = [];
+						buf.push(`<address>`);
+						if (author.email) buf.push(`<a href="mailto:${author.email}">`);
+						buf.push(author.name);
+						if (author.email) buf.push(`</a>`);
+						buf.push(`<br />`);
+						if (author.institution) buf.push(author.institution);
+					  	buf.push(`</address>`);
+						return buf.join('');
+					}).join('') %>
+				</section>
+				<section class="abstract">
+					<h1>Abstract</h1>
+					<p><%- abstract.replace(/(?:\r\n|\r|\n)/g, '<br />'); %></p>
+				</section>
+			</header>
+			<main>
+				<%- contents %>
+			<main>
+		</article>
+	</body>
+</html>

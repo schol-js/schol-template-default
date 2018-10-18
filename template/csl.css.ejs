@@ -1,0 +1,40 @@
+/**
+ * Bibliography stylesheet.
+ * 
+ * Adapted from the Zotero project.
+ * 
+ * See https://github.com/zotero/zotero/blob/4aaec5f091530a9e377ac0f05c5e2beb2da995d1/chrome/content/zotero/xpcom/cite.js
+ * 
+ */
+
+div.csl-bib-body {
+	line-height: <%- cslFormat.linespacing %>;
+}
+
+div.csl-bib-body div.csl-entry {
+	clear: left;
+	margin-bottom: <%- cslFormat.entryspacing ? cslFormat.entryspacing + 'em' : 'unset' %>;
+}
+
+div.csl-bib-body div.csl-entry:last-child {
+	margin-bottom: unset;
+}
+
+div.csl-bib-body div.csl-left-margin {
+	float: left;
+	padding-right: .5em;
+    text-align: <%- cslFormat['second-field-align'] ? `right` : `unset` %>
+	width: <%- cslFormat['second-field-align'] && cslFormat.maxoffset ? cslFormat.maxoffset + 'em' : `unset` %>
+
+}
+
+div.csl-bib-body div.csl-right-inline {
+	margin: 0 .4em 0 <%- cslFormat['second-field-align'] ? cslFormat.maxoffset + 0.5 + `em` : '0' %>;
+	padding-left: <%- cslFormat.hangingindent ? cslFormat.hangingindent + `em` : `unset` %>;
+}
+
+div.csl-bib-body div.csl-indent {
+	margin: .5em 0 0 2em;
+	padding: 0 0 .2em .5em;
+	border-left: 5px solid #ccc;
+}

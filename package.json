@@ -3,5 +3,5 @@
   "version": "0.0.0",
   "description": "Default template for schol.",
   "author": "Jamie Czerwinski <jamie.czerwinski@gmail.com>",
-  "main": "index.js"
+  "main": "template/index.html.ejs"
 }
