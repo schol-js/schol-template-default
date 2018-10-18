@@ -1,6 +1,6 @@
 {
   "name": "schol-template-default",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Default template for schol.",
   "author": "Jamie Czerwinski <jamie.czerwinski@gmail.com>",
   "main": "template/index.html.ejs"

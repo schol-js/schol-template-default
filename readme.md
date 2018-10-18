@@ -4,11 +4,11 @@
 
 ## Demo
 
-[![thumbnail](https://github.com/schol-js/schol-template-default/blob/master/media/example.png?size=200)](https://schol-js.github.io/schol-template-default)
+[![thumbnail](https://github.com/schol-js/schol-template-default/blob/master/media/example.png)](https://schol-js.github.io/schol-template-default)
 
 ## Usage
 
-Use this to get started writing a research paper, or as a starting point for writing a new template.
+Use this schol template to get started writing a research paper. You can also use this template a starting point for developing new templates.
 
 ### Research Paper
 
@@ -38,21 +38,21 @@ A few things to keep in mind:
 
  - Anything placed in `src/` will be copied to the `src/` folder of any schol project initialized with the template.
 
- - Documents within `src/` will be processed as EJS templates when initialized by `schol init`. One value will always be provided to these templates: the current `date`, in YYYY-MM-DD format
+ - Documents within `src/` will be processed as EJS templates when initialized by `schol init`. The current `date` will always be provided to these templates in YYYY-MM-DD format.
 
  - Test and develop your template by running the following from within your template directory:
 
-  ```sh
-  npm link
-  npm link schol-template-default // Or whatever your template is
-  schol edit -p
-  ```
+   ```sh
+   npm link
+   npm link schol-template-default // Or whatever your template is
+   schol edit -p
+   ```
   
-  This will use the current directory (your template directory) as the template, and will run your  `src/` files through EJS to inject the date before further processing.
+   This will use the current directory (your template directory) as the template, and will run your  `src/` files through EJS to inject the date before further processing.
 
  - Include example output of your template in the `docs` folder with `schol render -p` and [set up your GitHub repository to publish from the `docs/` folder in your template project.](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#publishing-your-github-pages-site-from-a-docs-folder-on-your-master-branch). This will allow users to see what your template looks like before they use it.
 
- - Include a screenshot of your template output in `media/example.png`. Use a square aspect ratio.
+ - Include a screenshot of your template output in `media/example.png`. Use a square aspect ratio with a resolution of at least 898x898.
 
  - Once published to npm and GitHub, add your template to the [schol templates list](https://github.com/schol-js/schol/wiki/templates)!
 
