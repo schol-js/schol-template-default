@@ -10,9 +10,7 @@
 
 Use this schol template to get started writing a research paper. You can also use this template a starting point for developing new templates.
 
-### Research Paper
-
-#### New Projects
+### Create a new schol project
 
 To create a new project using this template, create a new folder for the project, navigate into it, and initialize a new schol project with `schol init`:
 
