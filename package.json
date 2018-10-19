@@ -6,6 +6,10 @@
     "name": "Jamie Czerwinski",
     "email": "jamie.czerwinski@gmail.com"
   },
+  "repository": {
+    "type" : "git",
+  	"url" : "https://github.com/schol-js/schol-template-default"
+  },
   "main": "template/index.html.ejs",
   "license": "MIT"
 }
