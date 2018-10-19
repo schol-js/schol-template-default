@@ -4,7 +4,7 @@
 
 ## Demo
 
-[![thumbnail](https://github.com/schol-js/schol-template-default/blob/master/media/example.png)](https://schol-js.github.io/schol-template-default)
+[![thumbnail](media/example.png)](https://schol-js.github.io/schol-template-default)
 
 ## Usage
 
