@@ -36,17 +36,15 @@ A few things to keep in mind:
 
  - Anything placed in `src/` will be copied to the `src/` folder of any schol project initialized with the template.
 
- - Documents within `src/` will be processed as EJS templates when initialized by `schol init`. The current `date` will always be provided to these templates in YYYY-MM-DD format.
-
  - Test and develop your template by running the following from within your template directory:
 
    ```sh
    npm link
    npm link schol-template-default // Or whatever your template is
-   schol edit -p
+   schol edit
    ```
   
-   This will use the current directory (your template directory) as the template, and will run your  `src/` files through EJS to inject the date before further processing.
+   This will use the current directory (your template directory) as the template.
 
  - Include example output of your template in the `docs` folder with `schol render -p` and [set up your GitHub repository to publish from the `docs/` folder in your template project.](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#publishing-your-github-pages-site-from-a-docs-folder-on-your-master-branch). This will allow users to see what your template looks like before they use it.
 

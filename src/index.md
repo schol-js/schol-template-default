@@ -1,7 +1,6 @@
 ---
 template: schol-template-default
 citation-style: apa
-date: <%= date  %>
 authors:
   - name: Your Name
     email: your.email@example.com
