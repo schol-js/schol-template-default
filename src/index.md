@@ -1,6 +1,6 @@
 ---
 template: schol-template-default
-citation-style: apa
+citation_style: apa
 authors:
   - name: Your Name
     email: your.email@example.com
