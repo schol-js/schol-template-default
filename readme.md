@@ -30,9 +30,21 @@ You can then either publish your template on npm, or simply use it locally.
 
 A few things to keep in mind:
 
+ - To initialize your template by name rather than by path while it is in development, you must first `npm link` it from the directory in which you wish to initialize it:
+
+ ```sh
+ // From your template directory -- schol-template-custom
+ npm link
+ cd ..
+ mkdir new-project
+ npm link schol-template-custom
+ // Now you can initialize it
+ schol init --template schol-template-custom
+ ```
+
  - Make sure your package name starts with `schol-template-` to make it easy to find
 
- - The `main` property in `package.json` must point to a valid [EJS](http://ejs.co/) template located in the root of the `src/` directory.
+ - The `main` property in `package.json` must point to a valid [EJS](http://ejs.co/) template located in the root of the `template/` directory.
 
  - Anything placed in `src/` will be copied to the `src/` folder of any schol project initialized with the template.
 
@@ -46,7 +58,7 @@ A few things to keep in mind:
   
    This will use the current directory (your template directory) as the template.
 
- - Include example output of your template in the `docs` folder with `schol render -p` and [set up your GitHub repository to publish from the `docs/` folder in your template project.](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#publishing-your-github-pages-site-from-a-docs-folder-on-your-master-branch). This will allow users to see what your template looks like before they use it.
+ - Include example output of your template in the `docs` folder with `schol render` and [set up your GitHub repository to publish from the `docs/` folder in your template project.](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#publishing-your-github-pages-site-from-a-docs-folder-on-your-master-branch). This will allow users to see what your template looks like before they use it.
 
  - Include a screenshot of your template output in `media/example.png`. Use a square aspect ratio with a resolution of at least 898x898.
 
