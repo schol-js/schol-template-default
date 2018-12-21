@@ -37,6 +37,7 @@ A few things to keep in mind:
  npm link
  cd ..
  mkdir new-project
+ cd new-project
  npm link schol-template-custom
  // Now you can initialize it
  schol init --template schol-template-custom
